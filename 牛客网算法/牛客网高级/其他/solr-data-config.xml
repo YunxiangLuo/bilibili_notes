@@ -1,0 +1,13 @@
+<dataConfig>
+    <dataSource type="JdbcDataSource" 
+              driver="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost/wenda" 
+              user="root" 
+              password="nowcoder"/>
+    <document>
+        <entity name="question"  query="select id,title,content from question">
+            <field column="content" name="question_content"/>
+            <field column="title" name="question_title"/>
+        </entity>
+    </document>
+</dataConfig>
